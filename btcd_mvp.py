@@ -1,4 +1,3 @@
-%%writefile btcd_mvp.py
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -77,3 +76,4 @@ trade_data = pd.DataFrame({
 fig = px.bar(trade_data, x="Sector", y="Trade Volume (USD M)",
              color="Risk Score", title="Top Export Opportunities (Mock Data)")
 st.plotly_chart(fig)
+
